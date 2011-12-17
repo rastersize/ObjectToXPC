@@ -33,5 +33,5 @@ Either include the source files directly (in which case you will also need the (
 
 
 ## License ##
-The project is licensed under the "Simplified BSD license" (2-clause), for the exact terms please see the [LICENSE file](https://github.com/rastersize/ObjectiveHub/blob/master/LICENSE).
+The project is licensed under the "Simplified BSD license" (2-clause), for the exact terms please see the [LICENSE file](https://github.com/rastersize/ObjectToXPC/blob/master/LICENSE).
 
