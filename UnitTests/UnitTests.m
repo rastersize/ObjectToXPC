@@ -64,7 +64,7 @@
 
 	
 	NSArray *objc_arrayFromXpc = [NSArray arrayWithXPCObject:xpc_arrayFromObjc];
-	STAssertNotNil(objc_arrayFromXpc,								@"Initiating from an XPC data object should NOT return NULL/nil.");
+	STAssertNotNil(objc_arrayFromXpc,								@"Initiating from an XPC array object should NOT return NULL/nil.");
 	STAssertFalse(objc_array == objc_arrayFromXpc,					@"The objc_array pointer should NOT be equal to the objc_arrayFromXpc pointer.");
 	STAssertEqualObjects(objc_array, objc_arrayFromXpc,				@"objc_array must be equal to objc_arrayFromXpc content wise.");
 }
@@ -92,6 +92,55 @@
 	NSDate *objc_dateFromXpc = [NSDate dateWithXPCObject:xpc_dateFromObjc];
 	STAssertNotNil(objc_dateFromXpc,								@"Initiating from an XPC date object should NOT return NULL/nil.");
 	STAssertEqualObjects(objc_date, objc_dateFromXpc,				@"objc_date must be equal to objc_dateFromXpc content wise.");
+}
+
+- (void)testDictionaryObject
+{
+	NSString *arrayKey = @"array";
+	NSArray *array = [NSArray arrayWithObjects:@"foo", @"bar", nil];
+	NSString *dateKey = @"date";
+	NSDate *date = [NSDate dateWithTimeIntervalSinceReferenceDate:3600.0];
+	NSString *dataKey = @"data";
+	NSData *data = [@"Some data..." dataUsingEncoding:NSUTF8StringEncoding];
+	NSString *dictionaryKey = @"dict";
+	NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"anObject", @"aKey", nil];
+	NSString *nullKey = @"null";
+	NSNull *nullObj = [NSNull null];
+	
+	NSString *boolKey = @"bool";
+	NSNumber *numberBool = [NSNumber numberWithBool:YES];
+	NSString *doubleKey = @"double";
+	NSNumber *numberDouble = [NSNumber numberWithDouble:123.456];
+	NSString *int64Key = @"int64";
+	NSNumber *numberInt64 = [NSNumber numberWithLongLong:-123456];
+	NSString *uint64Key = @"uint64";
+	NSNumber *numberUint64 = [NSNumber numberWithUnsignedLongLong:123456];
+	
+	NSString *stringKey = @"string";
+	NSString *string = @"A nice and relatively long string.";
+	
+	NSDictionary *objc_dict = [NSDictionary dictionaryWithObjectsAndKeys:
+							   array,			arrayKey,
+							   date,			dateKey,
+							   data,			dataKey,
+							   dictionary,		dictionaryKey,
+							   nullObj,			nullKey,
+							   numberBool,		boolKey,
+							   numberDouble,	doubleKey,
+							   numberInt64,		int64Key,
+							   numberUint64,	uint64Key,
+							   string,			stringKey,
+							   nil];
+	
+	xpc_object_t xpc_dictFromObjc = [objc_dict XPCObject];
+	STAssertTrue(xpc_dictFromObjc != NULL,								@"XPCObject must NOT return NULL for a populated NSDictionary.");
+	STAssertTrue(xpc_get_type(xpc_dictFromObjc) == XPC_TYPE_DICTIONARY,	@"Returned XPCObject must be of type XPC_TYPE_DICTIONARY.");
+	
+	
+	NSDictionary *objc_dictFromXpc = [NSDictionary dictionaryWithXPCObject:xpc_dictFromObjc];
+	STAssertNotNil(objc_dictFromXpc,								@"Initiating from an XPC dictionary object should NOT return NULL/nil.");
+	STAssertFalse(objc_dict == objc_dictFromXpc,					@"The objc_dict pointer should NOT be equal to the objc_dictFromXpc pointer.");
+	STAssertEqualObjects(objc_dict, objc_dictFromXpc,				@"objc_dict must be equal to objc_dictFromXpc content wise.");
 }
 
 - (void)testNumberObject
@@ -187,7 +236,6 @@
 }
 
 /*
-- (void)testDictionaryObject
 - (void)testNullObject
 - (void)testStringObject
  */
