@@ -1,0 +1,37 @@
+# ObjectToXPC #
+A bunch of categories for converting a few types of Objective-C objects defined in the [Foundation framework](http://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/ObjC_classic/_index.html) to and from [XPC](http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingXPCServices.html) objects.
+
+## Supported objects ##
+### Objective-C objects ###
+- `NSArray` (where the elements are one of the supported),
+- `NSData`,
+- `NSDate`,
+- `NSDictionary` (where the elements are one of the supported, keys must either be of the NSString class or define the `-description` method),
+- `NSNull` (only in collections),
+- `NSNumber`,
+- `NSString`.
+
+### XPC object types ###
+- `XPC_TYPE_ARRAY`
+- `XPC_TYPE_BOOL`
+- `XPC_TYPE_DATA` (to and from `NSNumber`)
+- `XPC_TYPE_DATE`
+- `XPC_TYPE_DICTIONARY`
+- `XPC_TYPE_DOUBLE` (to and from `NSNumber`)
+- `XPC_TYPE_INT64` (to and from `NSNumber`)
+- `XPC_TYPE_UINT64` (to and from `NSNumber`)
+- `XPC_TYPE_NULL`
+- `XPC_TYPE_STRING`
+
+
+## Requirements ##
+The project requires Mac OS X 10.7+ and Xcode 4.2 to build and Mac OS X 10.7+ to run as the XPC Services API was first introduced in OS X 10.7. Will not work on iOS as the XPC API is not available here. Furthermore, the project have been written for automatic reference counting (ARC).
+
+
+## Usage ##
+Either include the source files directly (in which case you will also need the (`ObjectToXPC-Private.h` header file) or link with the library.
+
+
+## License ##
+The project is licensed under the "Simplified BSD license" (2-clause), for the exact terms please see the [LICENSE file](https://github.com/rastersize/ObjectiveHub/blob/master/LICENSE).
+
