@@ -10,4 +10,13 @@
 
 @interface UnitTests : SenTestCase
 
+- (void)testArrayObject;
+- (void)testBool;
+- (void)testDataObject;
+- (void)testDateObject;
+- (void)testDictionaryObject;
+- (void)testNullObject;
+- (void)testNumberObject;
+- (void)testStringObject;
+
 @end
