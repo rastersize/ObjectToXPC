@@ -69,4 +69,17 @@
 	STAssertEqualObjects(objc_array, objc_arrayFromXpc, @"objc_array must be equal to objc_arrayFromXpc content wise.");
 }
 
+- (void)testDataObject
+{
+	NSData *objc_data = [@"test data string" dataUsingEncoding:NSUTF8StringEncoding];
+	xpc_object_t xpc_dataFromObjc = [objc_data XPCObject];
+	STAssertTrue(xpc_dataFromObjc != NULL, @"XPCObject must NOT return NULL for a NSData object with data.");
+	STAssertTrue(xpc_get_type(xpc_dataFromObjc) == XPC_TYPE_DATA, @"Returned XPCObject must be of type XPC_TYPE_DATA.");
+
+	NSData *objc_dataFromXpc = [NSData dataWithXPCObject:xpc_dataFromObjc];
+	STAssertNotNil(objc_dataFromXpc, @"Initiating from an XPC data object should NOT return NULL/nil.");
+	STAssertFalse(objc_data == objc_dataFromXpc, @"The objc_data pointer should NOT be equal to the objc_dataFromXpc pointer.");
+	STAssertEqualObjects(objc_data, objc_dataFromXpc, @"objc_data must be equal to objc_dataFromXpc content wise.");
+}
+
 @end
