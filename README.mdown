@@ -1,5 +1,5 @@
 # ObjectToXPC #
-A bunch of categories for converting a few types of Objective-C objects defined in the [Foundation framework](http://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/ObjC_classic/_index.html) to and from [XPC](http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingXPCServices.html) objects.
+A bunch of categories for converting a few types of Objective-C objects (defined in the [Foundation framework](http://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/ObjC_classic/_index.html)) to and from [XPC](http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingXPCServices.html) objects.
 
 ## Supported objects ##
 ### Objective-C objects ###
