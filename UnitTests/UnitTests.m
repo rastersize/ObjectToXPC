@@ -59,27 +59,39 @@
 						   string,
 						   nil];
 	xpc_object_t xpc_arrayFromObjc = [objc_array XPCObject];
-	STAssertTrue(xpc_arrayFromObjc != NULL, @"XPCObject must NOT return NULL for a populated NSArray.");
-	STAssertTrue(xpc_get_type(xpc_arrayFromObjc) == XPC_TYPE_ARRAY, @"Returned XPCObject must be of type XPC_TYPE_ARRAY.");
+	STAssertTrue(xpc_arrayFromObjc != NULL,							@"XPCObject must NOT return NULL for a populated NSArray.");
+	STAssertTrue(xpc_get_type(xpc_arrayFromObjc) == XPC_TYPE_ARRAY,	@"Returned XPCObject must be of type XPC_TYPE_ARRAY.");
 
 	
 	NSArray *objc_arrayFromXpc = [NSArray arrayWithXPCObject:xpc_arrayFromObjc];
-	STAssertNotNil(objc_arrayFromXpc, @"Initiating from an XPC data object should NOT return NULL/nil.");
-	STAssertFalse(objc_array == objc_arrayFromXpc, @"The objc_array pointer should NOT be equal to the objc_arrayFromXpc pointer.");
-	STAssertEqualObjects(objc_array, objc_arrayFromXpc, @"objc_array must be equal to objc_arrayFromXpc content wise.");
+	STAssertNotNil(objc_arrayFromXpc,								@"Initiating from an XPC data object should NOT return NULL/nil.");
+	STAssertFalse(objc_array == objc_arrayFromXpc,					@"The objc_array pointer should NOT be equal to the objc_arrayFromXpc pointer.");
+	STAssertEqualObjects(objc_array, objc_arrayFromXpc,				@"objc_array must be equal to objc_arrayFromXpc content wise.");
 }
 
 - (void)testDataObject
 {
 	NSData *objc_data = [@"test data string" dataUsingEncoding:NSUTF8StringEncoding];
 	xpc_object_t xpc_dataFromObjc = [objc_data XPCObject];
-	STAssertTrue(xpc_dataFromObjc != NULL, @"XPCObject must NOT return NULL for a NSData object with data.");
-	STAssertTrue(xpc_get_type(xpc_dataFromObjc) == XPC_TYPE_DATA, @"Returned XPCObject must be of type XPC_TYPE_DATA.");
+	STAssertTrue(xpc_dataFromObjc != NULL,							@"XPCObject must NOT return NULL for a NSData object with data.");
+	STAssertTrue(xpc_get_type(xpc_dataFromObjc) == XPC_TYPE_DATA,	@"Returned XPCObject must be of type XPC_TYPE_DATA.");
 	
 	NSData *objc_dataFromXpc = [NSData dataWithXPCObject:xpc_dataFromObjc];
-	STAssertNotNil(objc_dataFromXpc, @"Initiating from an XPC data object should NOT return NULL/nil.");
-	STAssertFalse(objc_data == objc_dataFromXpc, @"The objc_data pointer should NOT be equal to the objc_dataFromXpc pointer.");
-	STAssertEqualObjects(objc_data, objc_dataFromXpc, @"objc_data must be equal to objc_dataFromXpc content wise.");
+	STAssertNotNil(objc_dataFromXpc,								@"Initiating from an XPC data object should NOT return NULL/nil.");
+	STAssertFalse(objc_data == objc_dataFromXpc,					@"The objc_data pointer should NOT be equal to the objc_dataFromXpc pointer.");
+	STAssertEqualObjects(objc_data, objc_dataFromXpc,				@"objc_data must be equal to objc_dataFromXpc content wise.");
+}
+
+- (void)testDateObject
+{
+	NSDate *objc_date = [NSDate dateWithTimeIntervalSince1970:3600];
+	xpc_object_t xpc_dateFromObjc = [objc_date XPCObject];
+	STAssertTrue(xpc_dateFromObjc != NULL,							@"XPCObject must NOT return NULL.");
+	STAssertTrue(xpc_get_type(xpc_dateFromObjc) == XPC_TYPE_DATE,	@"Returned XPCObject must be of type XPC_TYPE_DATE.");
+	
+	NSDate *objc_dateFromXpc = [NSDate dateWithXPCObject:xpc_dateFromObjc];
+	STAssertNotNil(objc_dateFromXpc,								@"Initiating from an XPC date object should NOT return NULL/nil.");
+	STAssertEqualObjects(objc_date, objc_dateFromXpc,				@"objc_date must be equal to objc_dateFromXpc content wise.");
 }
 
 - (void)testNumberObject
@@ -173,5 +185,11 @@
 	STAssertTrue(primitive_uint64 == extracted_primitive_uint64, @"The original primitive 'primitive_uint64' should be equal to the extracted primitive 'extracted_primitive_uint64'.");
 	STAssertTrue(primitive_double == extracted_primitive_double, @"The original primitive 'primitive_double' should be equal to the extracted primitive 'extracted_primitive_double'.");
 }
+
+/*
+- (void)testDictionaryObject
+- (void)testNullObject
+- (void)testStringObject
+ */
 
 @end
