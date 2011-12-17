@@ -228,16 +228,24 @@
 	
 	// The extracted primitive values of the derived NSNumber objcets should be
 	// the same as the original primitives
-	STAssertTrue(primitive_bool_yes == extracted_primitive_bool_yes, @"The original primitive 'primitive_bool_yes' should be equal to the extracted primitive 'extracted_primitive_bool_yes'.");
-	STAssertTrue(primitive_bool_no == extracted_primitive_bool_no, @"The original primitive 'primitive_bool_no' should be equal to the extracted primitive 'extracted_primitive_bool_no'.");
-	STAssertTrue(primitive_int64 == extracted_primitive_int64, @"The original primitive 'primitive_int64' should be equal to the extracted primitive 'extracted_primitive_int64'.");
-	STAssertTrue(primitive_uint64 == extracted_primitive_uint64, @"The original primitive 'primitive_uint64' should be equal to the extracted primitive 'extracted_primitive_uint64'.");
-	STAssertTrue(primitive_double == extracted_primitive_double, @"The original primitive 'primitive_double' should be equal to the extracted primitive 'extracted_primitive_double'.");
+	STAssertTrue(primitive_bool_yes == extracted_primitive_bool_yes,	@"The original primitive 'primitive_bool_yes' should be equal to the extracted primitive 'extracted_primitive_bool_yes'.");
+	STAssertTrue(primitive_bool_no == extracted_primitive_bool_no,		@"The original primitive 'primitive_bool_no' should be equal to the extracted primitive 'extracted_primitive_bool_no'.");
+	STAssertTrue(primitive_int64 == extracted_primitive_int64,			@"The original primitive 'primitive_int64' should be equal to the extracted primitive 'extracted_primitive_int64'.");
+	STAssertTrue(primitive_uint64 == extracted_primitive_uint64,		@"The original primitive 'primitive_uint64' should be equal to the extracted primitive 'extracted_primitive_uint64'.");
+	STAssertTrue(primitive_double == extracted_primitive_double,		@"The original primitive 'primitive_double' should be equal to the extracted primitive 'extracted_primitive_double'.");
 }
 
-/*
-- (void)testNullObject
 - (void)testStringObject
- */
+{
+	NSString *objc_string = @"A nice test string!";
+	xpc_object_t xpc_stringFromObjc = [objc_string XPCObject];
+	STAssertTrue(xpc_stringFromObjc != NULL,							@"XPCObject must NOT return NULL.");
+	STAssertTrue(xpc_get_type(xpc_stringFromObjc) == XPC_TYPE_STRING,	@"Returned XPCObject must be of type XPC_TYPE_STRING.");
+	
+	NSString *objc_stringFromXpc = [NSString stringWithXPCObject:xpc_stringFromObjc];
+	STAssertNotNil(objc_stringFromXpc,									@"Initiating from an XPC string object should NOT return NULL/nil.");
+	STAssertEqualObjects(objc_string, objc_stringFromXpc,				@"objc_string must be equal to objc_stringFromXpc content wise.");
+}
+
 
 @end
