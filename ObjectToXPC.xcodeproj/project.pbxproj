@@ -50,13 +50,13 @@
 		9C509AB2149B956700C47839 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9C509AB3149B956700C47839 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C509AB6149B956700C47839 /* ObjectToXPC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectToXPC-Prefix.pch"; sourceTree = "<group>"; };
-		9C509AC3149B95D700C47839 /* NSArray+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CDXPC.h"; sourceTree = SOURCE_ROOT; };
-		9C509AC4149B95D700C47839 /* NSArray+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CDXPC.m"; sourceTree = SOURCE_ROOT; };
-		9C509AC8149B9EF200C47839 /* ObjectToXPC-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ObjectToXPC-Private.h"; sourceTree = SOURCE_ROOT; };
+		9C509AC3149B95D700C47839 /* NSArray+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+CDXPC.h"; path = "Source/NSArray+CDXPC.h"; sourceTree = SOURCE_ROOT; };
+		9C509AC4149B95D700C47839 /* NSArray+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+CDXPC.m"; path = "Source/NSArray+CDXPC.m"; sourceTree = SOURCE_ROOT; };
+		9C509AC8149B9EF200C47839 /* ObjectToXPC-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ObjectToXPC-Private.h"; path = "Source/ObjectToXPC-Private.h"; sourceTree = SOURCE_ROOT; };
 		9C509ACA149C8B9400C47839 /* NSDictionary+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CDXPC.h"; sourceTree = "<group>"; };
 		9C509ACB149C8B9400C47839 /* NSDictionary+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CDXPC.m"; sourceTree = "<group>"; };
-		9C509AD1149C986100C47839 /* NSNumber+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+CDXPC.h"; sourceTree = SOURCE_ROOT; };
-		9C509AD2149C986100C47839 /* NSNumber+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+CDXPC.m"; sourceTree = SOURCE_ROOT; };
+		9C509AD1149C986100C47839 /* NSNumber+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+CDXPC.h"; path = "Source/NSNumber+CDXPC.h"; sourceTree = SOURCE_ROOT; };
+		9C509AD2149C986100C47839 /* NSNumber+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+CDXPC.m"; path = "Source/NSNumber+CDXPC.m"; sourceTree = SOURCE_ROOT; };
 		9C509AD6149C9C3800C47839 /* NSDate+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CDXPC.h"; sourceTree = "<group>"; };
 		9C509AD7149C9C3800C47839 /* NSDate+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CDXPC.m"; sourceTree = "<group>"; };
 		9C509ADA149C9C9400C47839 /* NSData+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CDXPC.h"; sourceTree = "<group>"; };
@@ -96,20 +96,7 @@
 		9C509AA0149B956700C47839 = {
 			isa = PBXGroup;
 			children = (
-				9C509AB6149B956700C47839 /* ObjectToXPC-Prefix.pch */,
-				9C509AC8149B9EF200C47839 /* ObjectToXPC-Private.h */,
-				9C509AC3149B95D700C47839 /* NSArray+CDXPC.h */,
-				9C509AC4149B95D700C47839 /* NSArray+CDXPC.m */,
-				9C509ADA149C9C9400C47839 /* NSData+CDXPC.h */,
-				9C509ADB149C9C9400C47839 /* NSData+CDXPC.m */,
-				9C509AD6149C9C3800C47839 /* NSDate+CDXPC.h */,
-				9C509AD7149C9C3800C47839 /* NSDate+CDXPC.m */,
-				9C509ACA149C8B9400C47839 /* NSDictionary+CDXPC.h */,
-				9C509ACB149C8B9400C47839 /* NSDictionary+CDXPC.m */,
-				9C509AD1149C986100C47839 /* NSNumber+CDXPC.h */,
-				9C509AD2149C986100C47839 /* NSNumber+CDXPC.m */,
-				9C509ADE149C9CBB00C47839 /* NSString+CDXPC.h */,
-				9C509ADF149C9CBB00C47839 /* NSString+CDXPC.m */,
+				9C509B10149CF84800C47839 /* Source */,
 				9C509AEF149CA69E00C47839 /* UnitTests */,
 				9C509AAD149B956700C47839 /* Frameworks */,
 				9C509AAC149B956700C47839 /* Products */,
@@ -163,6 +150,27 @@
 				9C509AF8149CA69E00C47839 /* UnitTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C509B10149CF84800C47839 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9C509AB6149B956700C47839 /* ObjectToXPC-Prefix.pch */,
+				9C509AC8149B9EF200C47839 /* ObjectToXPC-Private.h */,
+				9C509AC3149B95D700C47839 /* NSArray+CDXPC.h */,
+				9C509AC4149B95D700C47839 /* NSArray+CDXPC.m */,
+				9C509ADA149C9C9400C47839 /* NSData+CDXPC.h */,
+				9C509ADB149C9C9400C47839 /* NSData+CDXPC.m */,
+				9C509AD6149C9C3800C47839 /* NSDate+CDXPC.h */,
+				9C509AD7149C9C3800C47839 /* NSDate+CDXPC.m */,
+				9C509ACA149C8B9400C47839 /* NSDictionary+CDXPC.h */,
+				9C509ACB149C8B9400C47839 /* NSDictionary+CDXPC.m */,
+				9C509AD1149C986100C47839 /* NSNumber+CDXPC.h */,
+				9C509AD2149C986100C47839 /* NSNumber+CDXPC.m */,
+				9C509ADE149C9CBB00C47839 /* NSString+CDXPC.h */,
+				9C509ADF149C9CBB00C47839 /* NSString+CDXPC.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +458,7 @@
 				9C509AFB149CA69E00C47839 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
