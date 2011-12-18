@@ -1,6 +1,8 @@
 # ObjectToXPC #
 A bunch of categories for converting a few types of Objective-C objects (defined in the [Foundation framework](http://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/ObjC_classic/_index.html)) to and from [XPC](http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingXPCServices.html) objects.
 
+Also see the blog post about it "[Convert Between XPC Objects and Objective-C Objects](http://aron.cedercrantz.com/2011/12/17/convert-between-xpc-objects-and-objective-c/)."
+
 ## Supported objects ##
 ### Objective-C objects ###
 - `NSArray` (where the elements are one of the supported),
