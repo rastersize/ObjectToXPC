@@ -7,86 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C509AC5149B95D700C47839 /* NSArray+CDXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509AC3149B95D700C47839 /* NSArray+CDXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C509AC6149B95D700C47839 /* NSArray+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509AC4149B95D700C47839 /* NSArray+CDXPC.m */; };
-		9C509AC7149B962F00C47839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C509AB3149B956700C47839 /* Foundation.framework */; };
-		9C509AC9149B9EF200C47839 /* ObjectToXPC-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509AC8149B9EF200C47839 /* ObjectToXPC-Private.h */; };
-		9C509ACC149C8B9400C47839 /* NSDictionary+CDXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509ACA149C8B9400C47839 /* NSDictionary+CDXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C509ACD149C8B9400C47839 /* NSDictionary+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509ACB149C8B9400C47839 /* NSDictionary+CDXPC.m */; };
-		9C509AD3149C986100C47839 /* NSNumber+CDXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509AD1149C986100C47839 /* NSNumber+CDXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C509AD4149C986100C47839 /* NSNumber+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509AD2149C986100C47839 /* NSNumber+CDXPC.m */; };
-		9C509AD8149C9C3800C47839 /* NSDate+CDXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509AD6149C9C3800C47839 /* NSDate+CDXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C509AD9149C9C3800C47839 /* NSDate+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509AD7149C9C3800C47839 /* NSDate+CDXPC.m */; };
-		9C509ADC149C9C9400C47839 /* NSData+CDXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509ADA149C9C9400C47839 /* NSData+CDXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C509ADD149C9C9400C47839 /* NSData+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509ADB149C9C9400C47839 /* NSData+CDXPC.m */; };
-		9C509AE0149C9CBB00C47839 /* NSString+CDXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509ADE149C9CBB00C47839 /* NSString+CDXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C509AE1149C9CBB00C47839 /* NSString+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509ADF149C9CBB00C47839 /* NSString+CDXPC.m */; };
-		9C509AED149CA69E00C47839 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C509AEC149CA69E00C47839 /* SenTestingKit.framework */; };
-		9C509AEE149CA69E00C47839 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C509AAE149B956700C47839 /* Cocoa.framework */; };
-		9C509AF4149CA69E00C47839 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C509AF2149CA69E00C47839 /* InfoPlist.strings */; };
-		9C509AF7149CA69E00C47839 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509AF6149CA69E00C47839 /* UnitTests.m */; };
-		9C509AFC149CA84800C47839 /* NSArray+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509AC4149B95D700C47839 /* NSArray+CDXPC.m */; };
-		9C509AFD149CA84B00C47839 /* NSData+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509ADB149C9C9400C47839 /* NSData+CDXPC.m */; };
-		9C509AFE149CA84D00C47839 /* NSDate+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509AD7149C9C3800C47839 /* NSDate+CDXPC.m */; };
-		9C509AFF149CA85000C47839 /* NSDictionary+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509ACB149C8B9400C47839 /* NSDictionary+CDXPC.m */; };
-		9C509B00149CA85200C47839 /* NSNumber+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509AD2149C986100C47839 /* NSNumber+CDXPC.m */; };
-		9C509B01149CA85500C47839 /* NSString+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509ADF149C9CBB00C47839 /* NSString+CDXPC.m */; };
+		9CB8193014BE6B4D00A2D29C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C509AEC149CA69E00C47839 /* SenTestingKit.framework */; };
+		9CB8193114BE6B4D00A2D29C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C509AAE149B956700C47839 /* Cocoa.framework */; };
+		9CB8193414BE6B4D00A2D29C /* ObjectToXPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB8191E14BE6B4C00A2D29C /* ObjectToXPC.framework */; };
+		9CB8194414BE6B8A00A2D29C /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509AF6149CA69E00C47839 /* UnitTests.m */; };
+		9CB8194514BE6BD800A2D29C /* ObjectToXPC-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9C509AB6149B956700C47839 /* ObjectToXPC-Prefix.pch */; };
+		9CB8194614BE6BD800A2D29C /* ObjectToXPC-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509AC8149B9EF200C47839 /* ObjectToXPC-Private.h */; };
+		9CB8194714BE6BD800A2D29C /* NSArray+CDXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509AC3149B95D700C47839 /* NSArray+CDXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CB8194814BE6BD800A2D29C /* NSArray+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509AC4149B95D700C47839 /* NSArray+CDXPC.m */; };
+		9CB8194914BE6BD800A2D29C /* NSData+CDXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509ADA149C9C9400C47839 /* NSData+CDXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CB8194A14BE6BD800A2D29C /* NSData+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509ADB149C9C9400C47839 /* NSData+CDXPC.m */; };
+		9CB8194B14BE6BD800A2D29C /* NSDate+CDXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509AD6149C9C3800C47839 /* NSDate+CDXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CB8194C14BE6BD800A2D29C /* NSDate+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509AD7149C9C3800C47839 /* NSDate+CDXPC.m */; };
+		9CB8194D14BE6BD800A2D29C /* NSDictionary+CDXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509ACA149C8B9400C47839 /* NSDictionary+CDXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CB8194E14BE6BD800A2D29C /* NSDictionary+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509ACB149C8B9400C47839 /* NSDictionary+CDXPC.m */; };
+		9CB8194F14BE6BD800A2D29C /* NSNumber+CDXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509AD1149C986100C47839 /* NSNumber+CDXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CB8195014BE6BD800A2D29C /* NSNumber+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509AD2149C986100C47839 /* NSNumber+CDXPC.m */; };
+		9CB8195114BE6BD800A2D29C /* NSString+CDXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C509ADE149C9CBB00C47839 /* NSString+CDXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CB8195214BE6BD800A2D29C /* NSString+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C509ADF149C9CBB00C47839 /* NSString+CDXPC.m */; };
+		9CB8195514BE6C2400A2D29C /* ObjectToXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CB8195314BE6C2400A2D29C /* ObjectToXPC.h */; };
+		9CB8195914BE6C9A00A2D29C /* NSNull+CDXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CB8195714BE6C9A00A2D29C /* NSNull+CDXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CB8195A14BE6C9A00A2D29C /* NSNull+CDXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8195814BE6C9A00A2D29C /* NSNull+CDXPC.m */; };
+		9CB8196214BE6EA300A2D29C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C509AB3149B956700C47839 /* Foundation.framework */; };
+		9CB8196714BE70C100A2D29C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CB8196514BE70C100A2D29C /* InfoPlist.strings */; };
+		9CB8196A14BE70D000A2D29C /* ObjectToXPC-OSX-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9CB8196914BE70D000A2D29C /* ObjectToXPC-OSX-Prefix.pch */; };
+		9CB8196C14BE710B00A2D29C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C509AF2149CA69E00C47839 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9C509B02149CAB0D00C47839 /* PBXContainerItemProxy */ = {
+		9CB8193214BE6B4D00A2D29C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9C509AA2149B956700C47839 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9C509AEA149CA69E00C47839;
-			remoteInfo = UnitTests;
+			remoteGlobalIDString = 9CB8191D14BE6B4C00A2D29C;
+			remoteInfo = "ObjectToXPC-OSX";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9C509AAB149B956700C47839 /* ObjectToXPC.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = ObjectToXPC.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C509AAE149B956700C47839 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9C509AB1149B956700C47839 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		9C509AB2149B956700C47839 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9C509AB3149B956700C47839 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C509AB6149B956700C47839 /* ObjectToXPC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectToXPC-Prefix.pch"; sourceTree = "<group>"; };
-		9C509AC3149B95D700C47839 /* NSArray+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+CDXPC.h"; path = "Source/NSArray+CDXPC.h"; sourceTree = SOURCE_ROOT; };
-		9C509AC4149B95D700C47839 /* NSArray+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+CDXPC.m"; path = "Source/NSArray+CDXPC.m"; sourceTree = SOURCE_ROOT; };
-		9C509AC8149B9EF200C47839 /* ObjectToXPC-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ObjectToXPC-Private.h"; path = "Source/ObjectToXPC-Private.h"; sourceTree = SOURCE_ROOT; };
+		9C509AC3149B95D700C47839 /* NSArray+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CDXPC.h"; sourceTree = "<group>"; };
+		9C509AC4149B95D700C47839 /* NSArray+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CDXPC.m"; sourceTree = "<group>"; };
+		9C509AC8149B9EF200C47839 /* ObjectToXPC-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ObjectToXPC-Private.h"; sourceTree = "<group>"; };
 		9C509ACA149C8B9400C47839 /* NSDictionary+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CDXPC.h"; sourceTree = "<group>"; };
 		9C509ACB149C8B9400C47839 /* NSDictionary+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CDXPC.m"; sourceTree = "<group>"; };
-		9C509AD1149C986100C47839 /* NSNumber+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+CDXPC.h"; path = "Source/NSNumber+CDXPC.h"; sourceTree = SOURCE_ROOT; };
-		9C509AD2149C986100C47839 /* NSNumber+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+CDXPC.m"; path = "Source/NSNumber+CDXPC.m"; sourceTree = SOURCE_ROOT; };
+		9C509AD1149C986100C47839 /* NSNumber+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+CDXPC.h"; sourceTree = "<group>"; };
+		9C509AD2149C986100C47839 /* NSNumber+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+CDXPC.m"; sourceTree = "<group>"; };
 		9C509AD6149C9C3800C47839 /* NSDate+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CDXPC.h"; sourceTree = "<group>"; };
 		9C509AD7149C9C3800C47839 /* NSDate+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CDXPC.m"; sourceTree = "<group>"; };
 		9C509ADA149C9C9400C47839 /* NSData+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CDXPC.h"; sourceTree = "<group>"; };
 		9C509ADB149C9C9400C47839 /* NSData+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CDXPC.m"; sourceTree = "<group>"; };
 		9C509ADE149C9CBB00C47839 /* NSString+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CDXPC.h"; sourceTree = "<group>"; };
 		9C509ADF149C9CBB00C47839 /* NSString+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CDXPC.m"; sourceTree = "<group>"; };
-		9C509AEB149CA69E00C47839 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C509AEC149CA69E00C47839 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9C509AF1149CA69E00C47839 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		9C509AF3149CA69E00C47839 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C509AF5149CA69E00C47839 /* UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTests.h; sourceTree = "<group>"; };
 		9C509AF6149CA69E00C47839 /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
-		9C509AF8149CA69E00C47839 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		9CB8191E14BE6B4C00A2D29C /* ObjectToXPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectToXPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB8192F14BE6B4D00A2D29C /* ObjectToXPC-Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ObjectToXPC-Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB8195314BE6C2400A2D29C /* ObjectToXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectToXPC.h; sourceTree = "<group>"; };
+		9CB8195714BE6C9A00A2D29C /* NSNull+CDXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+CDXPC.h"; sourceTree = "<group>"; };
+		9CB8195814BE6C9A00A2D29C /* NSNull+CDXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+CDXPC.m"; sourceTree = "<group>"; };
+		9CB8195B14BE6D0A00A2D29C /* ObjectToXPC-Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ObjectToXPC-Tests-Info.plist"; sourceTree = "<group>"; };
+		9CB8196514BE70C100A2D29C /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = ObjectToXPC/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		9CB8196614BE70C100A2D29C /* ObjectToXPC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ObjectToXPC-Info.plist"; path = "ObjectToXPC/ObjectToXPC-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9CB8196914BE70D000A2D29C /* ObjectToXPC-OSX-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ObjectToXPC-OSX-Prefix.pch"; path = "ObjectToXPC/ObjectToXPC-OSX-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9C509AA8149B956700C47839 /* Frameworks */ = {
+		9CB8191A14BE6B4C00A2D29C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C509AC7149B962F00C47839 /* Foundation.framework in Frameworks */,
+				9CB8196214BE6EA300A2D29C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C509AE7149CA69E00C47839 /* Frameworks */ = {
+		9CB8192B14BE6B4D00A2D29C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C509AED149CA69E00C47839 /* SenTestingKit.framework in Frameworks */,
-				9C509AEE149CA69E00C47839 /* Cocoa.framework in Frameworks */,
+				9CB8193014BE6B4D00A2D29C /* SenTestingKit.framework in Frameworks */,
+				9CB8193114BE6B4D00A2D29C /* Cocoa.framework in Frameworks */,
+				9CB8193414BE6B4D00A2D29C /* ObjectToXPC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +103,7 @@
 		9C509AA0149B956700C47839 = {
 			isa = PBXGroup;
 			children = (
-				9C509B10149CF84800C47839 /* Source */,
+				9C509B10149CF84800C47839 /* ObjectToXPC */,
 				9C509AEF149CA69E00C47839 /* UnitTests */,
 				9C509AAD149B956700C47839 /* Frameworks */,
 				9C509AAC149B956700C47839 /* Products */,
@@ -106,8 +113,8 @@
 		9C509AAC149B956700C47839 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C509AAB149B956700C47839 /* ObjectToXPC.dylib */,
-				9C509AEB149CA69E00C47839 /* UnitTests.octest */,
+				9CB8191E14BE6B4C00A2D29C /* ObjectToXPC.framework */,
+				9CB8192F14BE6B4D00A2D29C /* ObjectToXPC-Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,16 +152,16 @@
 		9C509AF0149CA69E00C47839 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9C509AF1149CA69E00C47839 /* UnitTests-Info.plist */,
+				9CB8195B14BE6D0A00A2D29C /* ObjectToXPC-Tests-Info.plist */,
 				9C509AF2149CA69E00C47839 /* InfoPlist.strings */,
-				9C509AF8149CA69E00C47839 /* UnitTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9C509B10149CF84800C47839 /* Source */ = {
+		9C509B10149CF84800C47839 /* ObjectToXPC */ = {
 			isa = PBXGroup;
 			children = (
+				9CB8195314BE6C2400A2D29C /* ObjectToXPC.h */,
 				9C509AB6149B956700C47839 /* ObjectToXPC-Prefix.pch */,
 				9C509AC8149B9EF200C47839 /* ObjectToXPC-Private.h */,
 				9C509AC3149B95D700C47839 /* NSArray+CDXPC.h */,
@@ -169,64 +176,83 @@
 				9C509AD2149C986100C47839 /* NSNumber+CDXPC.m */,
 				9C509ADE149C9CBB00C47839 /* NSString+CDXPC.h */,
 				9C509ADF149C9CBB00C47839 /* NSString+CDXPC.m */,
+				9CB8195714BE6C9A00A2D29C /* NSNull+CDXPC.h */,
+				9CB8195814BE6C9A00A2D29C /* NSNull+CDXPC.m */,
+				9CB8192114BE6B4D00A2D29C /* Supporting Files */,
 			);
-			path = Source;
+			path = ObjectToXPC;
 			sourceTree = "<group>";
+		};
+		9CB8192114BE6B4D00A2D29C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CB8196914BE70D000A2D29C /* ObjectToXPC-OSX-Prefix.pch */,
+				9CB8196514BE70C100A2D29C /* InfoPlist.strings */,
+				9CB8196614BE70C100A2D29C /* ObjectToXPC-Info.plist */,
+			);
+			name = "Supporting Files";
+			path = "ObjectToXPC-OSX";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9C509AA9149B956700C47839 /* Headers */ = {
+		9CB8191B14BE6B4C00A2D29C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C509AC5149B95D700C47839 /* NSArray+CDXPC.h in Headers */,
-				9C509ACC149C8B9400C47839 /* NSDictionary+CDXPC.h in Headers */,
-				9C509AD3149C986100C47839 /* NSNumber+CDXPC.h in Headers */,
-				9C509AD8149C9C3800C47839 /* NSDate+CDXPC.h in Headers */,
-				9C509ADC149C9C9400C47839 /* NSData+CDXPC.h in Headers */,
-				9C509AE0149C9CBB00C47839 /* NSString+CDXPC.h in Headers */,
-				9C509AC9149B9EF200C47839 /* ObjectToXPC-Private.h in Headers */,
+				9CB8194514BE6BD800A2D29C /* ObjectToXPC-Prefix.pch in Headers */,
+				9CB8194614BE6BD800A2D29C /* ObjectToXPC-Private.h in Headers */,
+				9CB8194714BE6BD800A2D29C /* NSArray+CDXPC.h in Headers */,
+				9CB8194914BE6BD800A2D29C /* NSData+CDXPC.h in Headers */,
+				9CB8194B14BE6BD800A2D29C /* NSDate+CDXPC.h in Headers */,
+				9CB8194D14BE6BD800A2D29C /* NSDictionary+CDXPC.h in Headers */,
+				9CB8194F14BE6BD800A2D29C /* NSNumber+CDXPC.h in Headers */,
+				9CB8195114BE6BD800A2D29C /* NSString+CDXPC.h in Headers */,
+				9CB8195514BE6C2400A2D29C /* ObjectToXPC.h in Headers */,
+				9CB8195914BE6C9A00A2D29C /* NSNull+CDXPC.h in Headers */,
+				9CB8196A14BE70D000A2D29C /* ObjectToXPC-OSX-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9C509AAA149B956700C47839 /* ObjectToXPC */ = {
+		9CB8191D14BE6B4C00A2D29C /* ObjectToXPC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C509ABC149B956700C47839 /* Build configuration list for PBXNativeTarget "ObjectToXPC" */;
+			buildConfigurationList = 9CB8193E14BE6B4D00A2D29C /* Build configuration list for PBXNativeTarget "ObjectToXPC" */;
 			buildPhases = (
-				9C509AA7149B956700C47839 /* Sources */,
-				9C509AA8149B956700C47839 /* Frameworks */,
-				9C509AA9149B956700C47839 /* Headers */,
+				9CB8191914BE6B4C00A2D29C /* Sources */,
+				9CB8191A14BE6B4C00A2D29C /* Frameworks */,
+				9CB8191B14BE6B4C00A2D29C /* Headers */,
+				9CB8191C14BE6B4C00A2D29C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9C509B03149CAB0D00C47839 /* PBXTargetDependency */,
 			);
 			name = ObjectToXPC;
-			productName = CollectionToXPC;
-			productReference = 9C509AAB149B956700C47839 /* ObjectToXPC.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
+			productName = "ObjectToXPC-OSX";
+			productReference = 9CB8191E14BE6B4C00A2D29C /* ObjectToXPC.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		9C509AEA149CA69E00C47839 /* UnitTests */ = {
+		9CB8192E14BE6B4D00A2D29C /* ObjectToXPC-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C509AF9149CA69E00C47839 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildConfigurationList = 9CB8194114BE6B4D00A2D29C /* Build configuration list for PBXNativeTarget "ObjectToXPC-Tests" */;
 			buildPhases = (
-				9C509AE6149CA69E00C47839 /* Sources */,
-				9C509AE7149CA69E00C47839 /* Frameworks */,
-				9C509AE8149CA69E00C47839 /* Resources */,
-				9C509AE9149CA69E00C47839 /* ShellScript */,
+				9CB8192A14BE6B4D00A2D29C /* Sources */,
+				9CB8192B14BE6B4D00A2D29C /* Frameworks */,
+				9CB8192C14BE6B4D00A2D29C /* Resources */,
+				9CB8192D14BE6B4D00A2D29C /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9CB8193314BE6B4D00A2D29C /* PBXTargetDependency */,
 			);
-			name = UnitTests;
-			productName = UnitTests;
-			productReference = 9C509AEB149CA69E00C47839 /* UnitTests.octest */;
+			name = "ObjectToXPC-Tests";
+			productName = "ObjectToXPC-OSXTests";
+			productReference = 9CB8192F14BE6B4D00A2D29C /* ObjectToXPC-Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -250,25 +276,33 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C509AAA149B956700C47839 /* ObjectToXPC */,
-				9C509AEA149CA69E00C47839 /* UnitTests */,
+				9CB8191D14BE6B4C00A2D29C /* ObjectToXPC */,
+				9CB8192E14BE6B4D00A2D29C /* ObjectToXPC-Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9C509AE8149CA69E00C47839 /* Resources */ = {
+		9CB8191C14BE6B4C00A2D29C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C509AF4149CA69E00C47839 /* InfoPlist.strings in Resources */,
+				9CB8196714BE70C100A2D29C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB8192C14BE6B4D00A2D29C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CB8196C14BE710B00A2D29C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9C509AE9149CA69E00C47839 /* ShellScript */ = {
+		9CB8192D14BE6B4D00A2D29C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,40 +318,35 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9C509AA7149B956700C47839 /* Sources */ = {
+		9CB8191914BE6B4C00A2D29C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C509AC6149B95D700C47839 /* NSArray+CDXPC.m in Sources */,
-				9C509ACD149C8B9400C47839 /* NSDictionary+CDXPC.m in Sources */,
-				9C509AD4149C986100C47839 /* NSNumber+CDXPC.m in Sources */,
-				9C509AD9149C9C3800C47839 /* NSDate+CDXPC.m in Sources */,
-				9C509ADD149C9C9400C47839 /* NSData+CDXPC.m in Sources */,
-				9C509AE1149C9CBB00C47839 /* NSString+CDXPC.m in Sources */,
+				9CB8194814BE6BD800A2D29C /* NSArray+CDXPC.m in Sources */,
+				9CB8194A14BE6BD800A2D29C /* NSData+CDXPC.m in Sources */,
+				9CB8194C14BE6BD800A2D29C /* NSDate+CDXPC.m in Sources */,
+				9CB8194E14BE6BD800A2D29C /* NSDictionary+CDXPC.m in Sources */,
+				9CB8195014BE6BD800A2D29C /* NSNumber+CDXPC.m in Sources */,
+				9CB8195214BE6BD800A2D29C /* NSString+CDXPC.m in Sources */,
+				9CB8195A14BE6C9A00A2D29C /* NSNull+CDXPC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C509AE6149CA69E00C47839 /* Sources */ = {
+		9CB8192A14BE6B4D00A2D29C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C509AF7149CA69E00C47839 /* UnitTests.m in Sources */,
-				9C509AFC149CA84800C47839 /* NSArray+CDXPC.m in Sources */,
-				9C509AFD149CA84B00C47839 /* NSData+CDXPC.m in Sources */,
-				9C509AFE149CA84D00C47839 /* NSDate+CDXPC.m in Sources */,
-				9C509AFF149CA85000C47839 /* NSDictionary+CDXPC.m in Sources */,
-				9C509B00149CA85200C47839 /* NSNumber+CDXPC.m in Sources */,
-				9C509B01149CA85500C47839 /* NSString+CDXPC.m in Sources */,
+				9CB8194414BE6B8A00A2D29C /* UnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9C509B03149CAB0D00C47839 /* PBXTargetDependency */ = {
+		9CB8193314BE6B4D00A2D29C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9C509AEA149CA69E00C47839 /* UnitTests */;
-			targetProxy = 9C509B02149CAB0D00C47839 /* PBXContainerItemProxy */;
+			target = 9CB8191D14BE6B4C00A2D29C /* ObjectToXPC */;
+			targetProxy = 9CB8193214BE6B4D00A2D29C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -356,6 +385,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -376,56 +406,59 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		9C509ABD149B956700C47839 /* Debug */ = {
+		9CB8193F14BE6B4D00A2D29C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ObjectToXPC-Prefix.pch";
+				GCC_PREFIX_HEADER = "ObjectToXPC/ObjectToXPC-Prefix.pch";
+				INFOPLIST_FILE = "ObjectToXPC/ObjectToXPC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				RUN_CLANG_STATIC_ANALYZER = YES;
+				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
 		};
-		9C509ABE149B956700C47839 /* Release */ = {
+		9CB8194014BE6B4D00A2D29C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ObjectToXPC-Prefix.pch";
+				GCC_PREFIX_HEADER = "ObjectToXPC/ObjectToXPC-Prefix.pch";
+				INFOPLIST_FILE = "ObjectToXPC/ObjectToXPC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				RUN_CLANG_STATIC_ANALYZER = YES;
+				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
 		};
-		9C509AFA149CA69E00C47839 /* Debug */ = {
+		9CB8194214BE6B4D00A2D29C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
-				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				GCC_PREFIX_HEADER = "ObjectToXPC/ObjectToXPC-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests/ObjectToXPC-Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		9C509AFB149CA69E00C47839 /* Release */ = {
+		9CB8194314BE6B4D00A2D29C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
-				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				GCC_PREFIX_HEADER = "ObjectToXPC/ObjectToXPC-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests/ObjectToXPC-Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -442,20 +475,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C509ABC149B956700C47839 /* Build configuration list for PBXNativeTarget "ObjectToXPC" */ = {
+		9CB8193E14BE6B4D00A2D29C /* Build configuration list for PBXNativeTarget "ObjectToXPC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C509ABD149B956700C47839 /* Debug */,
-				9C509ABE149B956700C47839 /* Release */,
+				9CB8193F14BE6B4D00A2D29C /* Debug */,
+				9CB8194014BE6B4D00A2D29C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C509AF9149CA69E00C47839 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+		9CB8194114BE6B4D00A2D29C /* Build configuration list for PBXNativeTarget "ObjectToXPC-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C509AFA149CA69E00C47839 /* Debug */,
-				9C509AFB149CA69E00C47839 /* Release */,
+				9CB8194214BE6B4D00A2D29C /* Debug */,
+				9CB8194314BE6B4D00A2D29C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
