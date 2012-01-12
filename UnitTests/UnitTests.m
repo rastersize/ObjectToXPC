@@ -37,6 +37,7 @@
 #import "NSDictionary+CDXPC.h"
 #import "NSNumber+CDXPC.h"
 #import "NSString+CDXPC.h"
+#import "NSNull+CDXPC.h"
 
 @implementation UnitTests
 
@@ -180,16 +181,11 @@
 	NSNumber *objc_number_uint64	= [NSNumber numberWithUnsignedLongLong:primitive_uint64];
 	NSNumber *objc_number_double	= [NSNumber numberWithDouble:primitive_double];
 	
-	NSLog(@"bool nsnumber objCType: %s", [objc_number_bool_yes objCType]);
-	
 	xpc_object_t xpc_number_bool_yes	= [objc_number_bool_yes XPCObject];
 	xpc_object_t xpc_number_bool_no		= [objc_number_bool_no XPCObject];
 	xpc_object_t xpc_number_int64		= [objc_number_int64 XPCObject];
 	xpc_object_t xpc_number_uint64		= [objc_number_uint64 XPCObject];
 	xpc_object_t xpc_number_double		= [objc_number_double XPCObject];
-	
-	xpc_type_t typeYes = xpc_get_type(xpc_number_bool_yes);
-	NSLog(@"xpc_type_get(xpc_number_bool_yes): %p // %p", typeYes, XPC_TYPE_BOOL);
 	
 	// XPC objects MUST NOT be NULL/nil
 	STAssertTrue(xpc_number_bool_yes != NULL,	@"XPCObject must NOT return NULL for a boolean (true) number.");
@@ -268,6 +264,16 @@
 	NSString *objc_stringFromXpc = [NSString stringWithXPCObject:xpc_stringFromObjc];
 	STAssertNotNil(objc_stringFromXpc,									@"Initiating from an XPC string object should NOT return NULL/nil.");
 	STAssertEqualObjects(objc_string, objc_stringFromXpc,				@"objc_string must be equal to objc_stringFromXpc content wise.");
+}
+
+- (void)testNullObject
+{
+	NSNull *objc_null = [NSNull null];
+	xpc_object_t xpc_nullFromObjc = [objc_null XPCObject];
+	STAssertTrue(xpc_get_type(xpc_nullFromObjc) == XPC_TYPE_NULL,		@"Returned XPCObject must be of type XPC_TYPE_NULL.");
+	
+	NSNull *objc_nullFromXpc = [NSNull nullWithXPCObject:xpc_nullFromObjc];
+	STAssertEqualObjects(objc_null, objc_nullFromXpc,					@"objc_null must be equal to objc_nullFromXpc 'content' wise.");
 }
 
 

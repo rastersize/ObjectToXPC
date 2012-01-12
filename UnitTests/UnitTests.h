@@ -34,7 +34,6 @@
 @interface UnitTests : SenTestCase
 
 - (void)testArrayObject;
-- (void)testBool;
 - (void)testDataObject;
 - (void)testDateObject;
 - (void)testDictionaryObject;
